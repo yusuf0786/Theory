@@ -111,6 +111,7 @@ nav .nav-buttons{
     font-family: 'Raleway', sans-serif;
     font-size: 1.1rem;
     font-weight: 400;
+    cursor: pointer;
 }
 
 hr{
@@ -222,10 +223,20 @@ footer p{
     color: grey;
 }
 
-.socialmedia span{
+.socialmedia a{
     font-size: 1.5rem;
-    padding: 0 0.5rem;
     color: #4e82be;
+    text-decoration: none;
+    padding: 0 0.5rem;
+}
+.socialmedia a span{
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+    transform-origin: center;
+}
+.socialmedia a span:hover{
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
 }
 
 @media only screen and (max-width:767px){
